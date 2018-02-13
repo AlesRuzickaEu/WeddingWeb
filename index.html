@@ -1,0 +1,140 @@
+<!DOCTYPE HTML>
+<html lang="cz">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>Svatební web</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+    crossorigin="anonymous">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+
+<body>
+
+  <nav class="navbar navbar-light bg-light">
+    <span class="navbar-brand mb-0 h1">Svatební web Lenky a Aleše</span>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
+      aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav">
+        <li class="nav-item active">
+          <a class="nav-link" href="Úvod">Úvod <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="Ženich a nevěsta">Ženich a nevěsta</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="Kdy a kde?">Kdy a kde?</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link disabled" href="Jak se dostat?">Jak se dostat?</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+  <!-- přidat carousel na obrázek společný -->
+
+  <div class="media">
+    <img class="align-self-center mr-3 fotka rounded-0" src="Aleš.jpg" alt="Generic placeholder image">
+    <div class="media-body">
+      <h5 class="mt-0">Aleš</h5>
+      <p>popisek</p>
+    </div>
+    <img class="align-self-center mr-3 fotka rounded-0" src="Lenka.jpg" alt="Generic placeholder image">
+    <div class="media-body">
+      <h5 class="mt-0">Lenka</h5>
+      <p>popisek</p>
+    </div>
+  </div>
+  <div class="container">
+    <span class="align-middle">Se budou brát</span>
+    <span class="align-middle">2.6.2018 U Mauritzů, Stožec</span>
+  </div>
+
+  <!-- část s odpočítáváním -->
+<div>
+  <p id="demo"></p>
+  
+  <script src="script.js"></script>
+</div>
+<!-- mapka -->
+<div id="googleMap" style="width:100%;height:400px;"></div>
+<script src="script.js"></script>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB3sNIwgziURt_aRyfJEtCsoOhT7g3PmkQ
+&callback=myMap"></script> 
+
+
+<!-- Program dne  -->
+<div>
+  <h2>Program dne</h2>
+<ul>
+<li>10:00-12.30 drobné občerstvení a přivítání hostů</li>
+  <li>13:00 obřad u dřevěného kříže</li>
+  <li>14:00-15:00 focení</li>
+  <li>15.00 společný oběd</li>
+  <li>16:00 krájení dortu</li>
+  <li>19:00 grilování a zábava</li>
+</ul>
+</div>
+
+<!-- oblečení -->
+
+<div>
+  <h2>Co si obléci?</h2>
+  <p>Svatba bude uprostřed Šumavy, může být horko, ale i zima, možná slunce a možná déšť.
+    Chtěli bychom, abyste si s námi náš velký den užili bez omezení a proto bychom zamýšlený typ oblečení pro hosty nazvaly jako "smart casual".
+   Nejlepší vysvětlení má pan Špaček: "módní neformální oblečení, např. košile se zajímavým límečkem, bez kravaty nebo se šátkem, v létě světlé 
+   nebo proužkované sako, skvělý je tmavě modrý blejzr se zlatými knoflíky, k němu se hodí světle šedé až bílé kalhoty, béžové nebo světle hnědé 
+   mokasíny bez ponožek. Ženy mají velmi široký repertoár, zde jsou namístě capri, značkové džíny, delší šortky nad kolena s puky doplněné 
+   kabátkem stejné barvy, minisukně. " A ideálně bez podpatků - celý den se bude odehrávat na trávě. Pro představu přidáváme i pár fotek.
+  </p>
+  <img src="obleceni_muzi.jpg" alt="generic placeholder image">
+</div>
+
+
+<!-- dárky -->
+Svatební dary
+
+<!-- RPSV -->
+
+<div>
+  <h2>RPSV</h2>
+  <form name="contact" netlify>
+      <p>
+        <label>Vaše jméno: <input type="text" name="name"></label>   
+      </p>
+      <p>
+        <label>Váš email: <input type="email" name="email"></label>
+      </p>
+      <p>
+        <label>Počet dospělých hostů: <input type="number" name="adults"></label>
+      </p>
+      <p>
+        <label>Počet dětí: <input type="number" name="kids"></label>
+      </p>
+      <p>
+        <label>Ubytování: <input type="radio" name="ubytovani" value="ANO">ANO
+      <input type="radio" name="ubytovani" value="NE">NE</label>
+      </p>
+      <p>
+        <label>Poznámka: <textarea name="message"></textarea></label>
+      </p>
+      <p>
+        <button type="submit">Poslat</button>
+      </p>
+    </form>
+</div>
+
+</body>
+
+
+
+
+<!-- dárky -->
+
+
+</html>

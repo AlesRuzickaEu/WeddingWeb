@@ -1,0 +1,10 @@
+{
+  "name": "weddingweb",
+  "version": "",
+  "devDependencies": {
+    "live-server": "^1.2.0"
+  },
+  "scripts": {
+    "start": "live-server"
+  }
+}
