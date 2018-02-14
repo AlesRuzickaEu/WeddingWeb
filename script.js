@@ -44,7 +44,13 @@ var marker = new google.maps.Marker({
     });
 }
 
+// // carousel
 
+// $('.carousel').carousel({
+// cycle:
+//   interval: 200
+// })
+$('.carousel').carousel();
 
 
 
