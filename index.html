@@ -1,5 +1,5 @@
 <!DOCTYPE HTML>
-<html lang="cz">
+<html lang="cs">
 
 <head>
   <meta charset="utf-8">
@@ -213,37 +213,37 @@ cestovni tipy ???udelat media query? -->
           Při včasné odpovědi vám po naplnění kapacity rádi zarezervujeme i jiný penzion a zajistíme dopravu. Podle nahlášených
           hostů budeme objednávat i počet jídel a velikost dortu, či snídaně pro druhý den. Děkujeme, Aleš a Lenka</p>
 
-        <form netlify>
+        <form name="contact" netlify>
           <div class="form-group">
-            <label for="Vaše jméno">Vaše jméno</label>
+            <label for="jmeno">Vaše jméno</label>
             <input type="text" class="form-control" id="jmeno" name="jmeno" placeholder="Vaše jméno">
           </div>
           <div class="form-group">
-            <label for="exampleInputEmail1">Váš email</label>
+            <label for="email">Váš email</label>
             <input type="email" class="form-control" id="email" name="email" aria-describedby="emailHelp" placeholder="Váš email">
           </div>
           <div class="form-group">
-            <label for="Pocet-dospelych-hostu">Počet dospělých hostů</label>
+            <label for="pocet-dospelych-hostu">Počet dospělých hostů</label>
             <input type="number" class="form-control" id="pocet-dospelych-hostu" name="pocet-dospelych-hostu" min="1" placeholder="Počet dospělých hostů">
           </div>
           <div class="form-group">
-            <label for="Pocet-deti">Počet dětí</label>
+            <label for="pocet-deti">Počet dětí</label>
             <input type="number" class="form-control" id="pocet-deti" name="pocet-deti" max="4" min="0" placeholder="Počet dětí">
           </div>
           <div class="form-group">
             <label for="mate-zajem-o-ubytovani">Máte zájem o ubytování?</label>
             <div class="form-check">
-              <input class="form-check-input" type="radio" name="Ubytování" id="inlineRadio1" value="ano">
-              <label class="form-check-label" for="inlineRadio1">ANO</label>
+              <input class="form-check-input" type="radio" name="mate-zajem-o-ubytovani" id="mate-zajem-o-ubytovani-ano" value="ano">
+              <label class="form-check-label" for="mate-zajem-o-ubytovani-ne">ANO</label>
             </div>
             <div class="form-check">
-              <input class="form-check-input" type="radio" name="Ubytování" id="inlineRadio2" value="ne">
-              <label class="form-check-label" for="inlineRadio2">NE</label>
+              <input class="form-check-input" type="radio" name="mate-zajem-o-ubytovani" id="mate-zajem-o-ubytovani-ne" value="ne">
+              <label class="form-check-label" for="mate-zajem-o-ubytovani-ani">NE</label>
             </div>
           </div>
           <div class="form-group">
-            <label for="exampleFormControlTextarea1">Poznámka</label>
-            <textarea class="form-control" id="exampleFormControlTextarea1" name="exampleFormControlTextarea1" rows="3"></textarea>
+            <label for="note">Poznámka</label>
+            <textarea class="form-control" id="note" name="note" rows="3"></textarea>
           </div>
 
           <button type="submit" class="btn btn-primary">Odeslat</button>
