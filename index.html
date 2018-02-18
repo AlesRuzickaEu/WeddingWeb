@@ -216,19 +216,19 @@ cestovni tipy ???udelat media query? -->
         <form netlify>
           <div class="form-group">
             <label for="Vaše jméno">Vaše jméno</label>
-            <input type="text" class="form-control" id="jmeno" placeholder="Vaše jméno">
+            <input type="text" class="form-control" id="jmeno" name="jmeno" placeholder="Vaše jméno">
           </div>
           <div class="form-group">
             <label for="exampleInputEmail1">Váš email</label>
-            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Váš email">
+            <input type="email" class="form-control" id="email" name="email" aria-describedby="emailHelp" placeholder="Váš email">
           </div>
           <div class="form-group">
             <label for="Pocet-dospelych-hostu">Počet dospělých hostů</label>
-            <input type="number" class="form-control" id="pocet-dospelych-hostu" min="1" placeholder="Počet dospělých hostů">
+            <input type="number" class="form-control" id="pocet-dospelych-hostu" name="pocet-dospelych-hostu" min="1" placeholder="Počet dospělých hostů">
           </div>
           <div class="form-group">
             <label for="Pocet-deti">Počet dětí</label>
-            <input type="number" class="form-control" id="pocet-deti" max="4" min="0" placeholder="Počet dětí">
+            <input type="number" class="form-control" id="pocet-deti" name="pocet-deti" max="4" min="0" placeholder="Počet dětí">
           </div>
           <div class="form-group">
             <label for="mate-zajem-o-ubytovani">Máte zájem o ubytování?</label>
@@ -243,7 +243,7 @@ cestovni tipy ???udelat media query? -->
           </div>
           <div class="form-group">
             <label for="exampleFormControlTextarea1">Poznámka</label>
-            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+            <textarea class="form-control" id="exampleFormControlTextarea1" name="exampleFormControlTextarea1" rows="3"></textarea>
           </div>
 
           <button type="submit" class="btn btn-primary">Odeslat</button>
