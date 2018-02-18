@@ -1,5 +1,32 @@
 .fotka {
     width:200px;
-  
+  }
+ h2 {
+     color:#000080;
+ } 
 
-}
+ .carousel img {
+     width: 100%;
+     height: 500px;
+
+ }
+
+ .zenich-a-nevesta img {
+     width:100%;
+ }
+
+ .odpocitavani .jumbotron .lead {
+     font-size: 2rem;
+ }
+ .car {
+     width: 64px;
+     height: 64px;
+ }
+ .train {
+    width: 64px;
+    height: 64px;
+ }
+ /* .carousel {
+     width.max: ;
+     height:200px;
+ } */

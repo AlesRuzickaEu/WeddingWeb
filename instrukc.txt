@@ -1,1 +1,4 @@
 terminal---npm start
+
+
+ctrl+P .... > format
