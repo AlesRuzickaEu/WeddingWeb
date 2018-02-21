@@ -3,12 +3,22 @@
   }
  h2 {
      color:#000080;
- } 
+ }
+
+ body {
+     background-image: url('photos/heart-pozadi.png');
+     background-size: 50%;
+     background-repeat: no-repeat;
+     background-position: center;
+     background-attachment: fixed;
+
+ }
+ .page {
+     background-color: rgba(255, 255, 255, 0.8);
+ }
 
  .carousel img {
      width: 100%;
-     height: 500px;
-
  }
 
  .zenich-a-nevesta img {
@@ -26,7 +36,20 @@
     width: 64px;
     height: 64px;
  }
+
+ #nadpis img {
+     width: 200px;
+    
+ }
+ #nadpis h1 {
+    font-family: 'Amatic SC', cursive;
+ }
+
  /* .carousel {
      width.max: ;
      height:200px;
  } */
+
+ .pinterest > span {
+     width: 100% !important;
+ }

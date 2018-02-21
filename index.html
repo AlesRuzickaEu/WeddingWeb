@@ -7,12 +7,13 @@
   <title>Svatební web</title>
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
     crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Allura|Amatic+SC|Courgette|Grand+Hotel|Great+Vibes|Italianno|Kalam|Marck+Script|Petit+Formal+Script|Romanesco|Shadows+Into+Light+Two" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
 </head>
 
 
 <body>
-  <nav class="navbar navbar-light bg-light">
+  <!-- <nav class="navbar navbar-light bg-light">
     <span class="navbar-brand mb-0 h1">Svatební web Lenky a Aleše</span>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
       aria-label="Toggle navigation">
@@ -36,223 +37,240 @@
         </li>
       </ul>
     </div>
-  </nav>
+  </nav> -->
+  <div class="page">
+    <div class="container">
 
-  <div class="container">
-    <!--carousel na obrázek společný -->
-    <div id="uvod" class="row">
-      <div class="carousel">
-        <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
-          <ol class="carousel-indicators">
-            <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-            <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-            <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-          </ol>
-          <div class="carousel-inner">
-            <div class="carousel-item active">
-              <img class="d-block w-100" src="spolecna_1.jpg" alt="First slide">
+      <div class="row" id="nadpis">
+        <div class="col">
+          <p class="text-center">
+            <img src="photos/heart-small.png" alt=""> </p>
+          <h1 class="text-center">Lenka Hrabáková a Aleš Růžička</h1>
+        </div>
+      </div>
+
+
+      <!--carousel na obrázek společný -->
+      <div id="uvod" class="row">
+        <div class="carousel">
+          <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+            <ol class="carousel-indicators">
+              <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+              <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+              <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+            </ol>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img class="d-block w-100" src="carousel/spolecna_1.jpg" alt="First slide">
+              </div>
+              <div class="carousel-item">
+                <img class="d-block w-100" src="carousel/spolecna_2.jpg" alt="Second slide">
+              </div>
+              <div class="carousel-item">
+                <img class="d-block w-100" src="carousel/spolecna_3.jpg" alt="Third slide">
+              </div>
             </div>
-            <div class="carousel-item">
-              <img class="d-block w-100" src="spolecna_2.jpg" alt="Second slide">
+            <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="sr-only">Next</span>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div id="zenich-a-nevesta" class="row zenich-a-nevesta mt-5">
+        <div class="col offset-1 col-4">
+          <div class="card">
+            <img class="card-img-top" src="photos/ales.jpg" alt="">
+            <div class="card-body">
+              <h5 class="card-title">Aleš Růžička</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
             </div>
-            <div class="carousel-item">
-              <img class="d-block w-100" src="spolecna_3.jpg" alt="Third slide">
+          </div>
+        </div>
+        <div class="col offset-2 col-4">
+          <div class="card">
+            <img class="card-img-top" src="photos/lenka.jpg" alt="">
+            <div class="card-body">
+              <h5 class="card-title">Lenka Hrabáková</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
             </div>
           </div>
-          <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="sr-only">Previous</span>
-          </a>
-          <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="sr-only">Next</span>
-          </a>
         </div>
-      </div>
-    </div>
 
-    <div id="zenich-a-nevesta" class="row zenich-a-nevesta mt-5">
-      <div class="col offset-1 col-4">
-        <div class="card">
-          <img class="card-img-top" src="ales.jpg" alt="">
-          <div class="card-body">
-            <h5 class="card-title">Aleš Růžička</h5>
-            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+      </div>
+
+
+
+      <!-- část s odpočítáváním -->
+      <div id="kdy-a-kde" class="row odpocitavani mt-5">
+        <div class="col">
+
+          <div class="jumbotron jumbotron-fluid">
+            <div class="container">
+              <div class="display-4 text-center" id="demo"></div>
+              <p class="lead text-center">Se budou brát 2.6.2018 U Mauritzů ve Stožci</p>
+            </div>
           </div>
         </div>
       </div>
-      <div class="col offset-2 col-4">
-        <div class="card">
-          <img class="card-img-top" src="lenka.jpg" alt="">
-          <div class="card-body">
-            <h5 class="card-title">Lenka Hrabáková</h5>
-            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-          </div>
+
+
+
+      <!-- mapka -->
+      <div class="row mapa mt-5">
+        <div class="col">
+          <div id="googleMap" style="width:100%;height:400px;"></div>
         </div>
       </div>
-     
-    </div>
-
-
-
-    <!-- část s odpočítáváním -->
-    <div id="kdy-a-kde" class="row odpocitavani mt-5">
-      <div class="col">
-
-        <div class="jumbotron jumbotron-fluid">
-          <div class="container">
-            <div class="display-4 text-center" id="demo"></div>
-            <p class="lead text-center">Se budou brát 2.6.2018 U Mauritzů ve Stožci</p>
-          </div>
-        </div>
-      </div>
-    </div>
-
-
-
-    <!-- mapka -->
-    <div class="row mapa mt-5">
-      <div class="col">
-        <div id="googleMap" style="width:100%;height:400px;"></div>
-      </div>
-    </div>
-    <!-- 
+      <!-- 
 cestovni tipy ???udelat media query? -->
 
-    <div id="jak-se-dostat" class="row doprava mt-5">
-      <div class="col">
-        <h2>Jak se do Stožce dostat?</h2>
-        <!-- <div class="col-5"></div> -->
-        <div class="row mt-3">
-          <div class="col col-5">
-            <div class="media">
-              <img class="align-self-center mr-3 car" src="car.png" alt="">
-              <div class="media-body">
-                <h5 class="mt-0">Autem</h5>
-                Příjezd autem je bezesporu nejjednodušším řešením. Nejsme si však jisti, že se na parkoviště u penzionu vejdou všechna auta.
-                Ve Stožci je možné parkovat i na
-                <a href="https://www.google.cz/maps/place/Sto%C5%BEec/@48.8590286,13.8194472,321m/data=!3m1!1e3!4m5!3m4!1s0x477495f87e23aa51:0x163d778da846adbd!8m2!3d48.8593711!4d13.8214158?hl=cs>">parkovišti</a> ve vesnici.
+      <div id="jak-se-dostat" class="row doprava mt-5">
+        <div class="col">
+          <h2>Jak se do Stožce dostat?</h2>
+          <!-- <div class="col-5"></div> -->
+          <div class="row mt-3">
+            <div class="col col-5">
+              <div class="media">
+                <img class="align-self-center mr-3 car" src="car.png" alt="">
+                <div class="media-body">
+                  <h5 class="mt-0">Autem</h5>
+                  Příjezd autem je bezesporu nejjednodušším řešením. Nejsme si však jisti, že se na parkoviště u penzionu vejdou všechna auta.
+                  Ve Stožci je možné parkovat i na
+                  <a href="https://www.google.cz/maps/place/Sto%C5%BEec/@48.8590286,13.8194472,321m/data=!3m1!1e3!4m5!3m4!1s0x477495f87e23aa51:0x163d778da846adbd!8m2!3d48.8593711!4d13.8214158?hl=cs>">parkovišti</a> ve vesnici.
+                </div>
               </div>
             </div>
-          </div>
-          <!-- </div> -->
+            <!-- </div> -->
 
-          <div class="col offset-1 col-5">
-            <div class="media">
-              <img class="align-self-center mr-3 car" src="train.png" alt="">
-              <div class="media-body">
-                <h5 class="mt-0">Vlakem</h5>
-                Další variantou, jak se dostat do Stožce je
-                <a href="https://jizdnirady.idnes.cz/vlaky/spojeni/">vlakem</a>. Připravte se na vyhlídkovou zážitkovou cestu šumavskou krajinou. Zastávku najdete ve vesnici
-                hned u parkoviště.
+            <div class="col offset-1 col-5">
+              <div class="media">
+                <img class="align-self-center mr-3 car" src="train.png" alt="">
+                <div class="media-body">
+                  <h5 class="mt-0">Vlakem</h5>
+                  Další variantou, jak se dostat do Stožce je
+                  <a href="https://jizdnirady.idnes.cz/vlaky/spojeni/">vlakem</a>. Připravte se na vyhlídkovou zážitkovou cestu šumavskou krajinou. Zastávku najdete ve vesnici
+                  hned u parkoviště.
+                </div>
               </div>
             </div>
+
           </div>
+        </div>
+      </div>
+
+
+      <!-- Program dne  -->
+      <div class="row mt-5">
+        <div class="col">
+          <h2>Program dne</h2>
+          <ul>
+            <li>10:00-12:30 drobné občerstvení a přivítání hostů</li>
+            <li>13:00 obřad u dřevěného kříže</li>
+            <li>14:00-15:00 focení</li>
+            <li>15:00 společný oběd</li>
+            <li>16:00 krájení dortu</li>
+            <li>19:00 grilování a zábava</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- oblečení -->
+
+      <div class="row mt-5">
+        <div class="col">
+          <h2>Co si obléci?</h2>
+          <p>Svatba bude uprostřed Šumavy, může být horko, ale i zima, možná slunce a možná déšť. Chtěli bychom, abyste si s
+            námi náš velký den užili bez omezení a proto bychom zamýšlený typ oblečení pro hosty nazvaly jako "smart casual".
+            Nejlepší vysvětlení má pan Špaček: "módní neformální oblečení, např. košile se zajímavým límečkem, bez kravaty
+            nebo se šátkem, v létě světlé nebo proužkované sako, skvělý je tmavě modrý blejzr se zlatými knoflíky, k němu
+            se hodí světle šedé až bílé kalhoty, béžové nebo světle hnědé mokasíny bez ponožek. Ženy mají velmi široký repertoár,
+            zde jsou namístě capri, značkové džíny, delší šortky nad kolena s puky doplněné kabátkem stejné barvy, minisukně.
+            " A ideálně bez podpatků - celý den se bude odehrávat na trávě. Pro představu přidáváme i odkaz na pár fotek.
+          </p>
+          <p>
+            <div class="pinterest">
+                <a data-pin-do="embedBoard" data-pin-lang="cs" data-pin-board-width="1100" data-pin-scale-height="400" data-pin-scale-width="80"
+                  href="https://cz.pinterest.com/lenkahrabkov/oble%25C4%258Den%25C3%25AD-na-svatbu/"></a>
+          </p>
+          </div>
+      </div>
+
+
+      <!-- dárky -->
+      <div class="row mt-5">
+        <div class="col">
+          <h2>Svatební dary </h2>
+          <p>Uvítáme jakýkoliv příspěvek na svatbu, či vybavení domečku. Pokud nám přeci jen chcete dát hmotný dárek, nebo zážitek,
+            seznam naleznete na odkazu: </p>
+          <p>
+            <a href="https://www.tomikup.cz/list/share/54950">Seznam svatebních dárků</a>
+          </p>
 
         </div>
       </div>
-    </div>
 
+      <!-- RPSV -->
 
-    <!-- Program dne  -->
-    <div class="row mt-5">
-      <div class="col">
-        <h2>Program dne</h2>
-        <ul>
-          <li>10:00-12.30 drobné občerstvení a přivítání hostů</li>
-          <li>13:00 obřad u dřevěného kříže</li>
-          <li>14:00-15:00 focení</li>
-          <li>15.00 společný oběd</li>
-          <li>16:00 krájení dortu</li>
-          <li>19:00 grilování a zábava</li>
-        </ul>
-      </div>
-    </div>
+      <div class="row mt-5">
+        <div class="col">
+          <h2>RPSV</h2>
+          <p>Prosím, odpovězte nám na pozvání, co nejdříve (nejlépe do 2.4.). V penzionu je možnost i ubytování (bude celý jen
+            pro nás), ale počet lůžek je omezený a přeci jen, během červnových víkendů je Šumava už oblíbeným útočištěm turistů.
+            Při včasné odpovědi vám po naplnění kapacity rádi zarezervujeme i jiný penzion a zajistíme dopravu. Podle nahlášených
+            hostů budeme objednávat i počet jídel a velikost dortu, či snídaně pro druhý den. Děkujeme, Aleš a Lenka</p>
 
-    <!-- oblečení -->
-
-    <div class="row mt-5">
-      <div class="col">
-        <h2>Co si obléci?</h2>
-        <p>Svatba bude uprostřed Šumavy, může být horko, ale i zima, možná slunce a možná déšť. Chtěli bychom, abyste si s námi
-          náš velký den užili bez omezení a proto bychom zamýšlený typ oblečení pro hosty nazvaly jako "smart casual". Nejlepší
-          vysvětlení má pan Špaček: "módní neformální oblečení, např. košile se zajímavým límečkem, bez kravaty nebo se šátkem,
-          v létě světlé nebo proužkované sako, skvělý je tmavě modrý blejzr se zlatými knoflíky, k němu se hodí světle šedé
-          až bílé kalhoty, béžové nebo světle hnědé mokasíny bez ponožek. Ženy mají velmi široký repertoár, zde jsou namístě
-          capri, značkové džíny, delší šortky nad kolena s puky doplněné kabátkem stejné barvy, minisukně. " A ideálně bez
-          podpatků - celý den se bude odehrávat na trávě. Pro představu přidáváme i odkaz na pár fotek.
-        </p>
-        <p>
-          <a data-pin-do="embedBoard" data-pin-lang="cs" data-pin-board-width="400" data-pin-scale-height="240" data-pin-scale-width="80"
-            href="https://cz.pinterest.com/lenkahrabkov/oble%25C4%258Den%25C3%25AD-na-svatbu/"></a>
-        </p>
-      </div>
-    </div>
-
-
-    <!-- dárky -->
-    <div class="row mt-5">
-      <div class="col">
-        <h2>Svatební dary </h2>
-        <p>Uvítáme jakýkoliv příspěvek na svatbu, či vybavení domečku. Pokud nám přeci jen chcete dát hmotný dárek, nebo zážitek,
-          seznam naleznete na odkazu: </p>
-        <p>
-          <a href="https://www.tomikup.cz/list/share/54950">Seznam svatebních dárků</a>
-        </p>
-
-      </div>
-    </div>
-
-    <!-- RPSV -->
-
-    <div class="row mt-5">
-      <div class="col">
-        <h2>RPSV</h2>
-        <p>Prosím, odpovězte nám na pozvání, co nejdříve (nejlépe do 2.4.). V penzionu je možnost i ubytování (bude celý jen
-          pro nás), ale počet lůžek je omezený a přeci jen, během červnových víkendů je Šumava už oblíbeným útočištěm turistů.
-          Při včasné odpovědi vám po naplnění kapacity rádi zarezervujeme i jiný penzion a zajistíme dopravu. Podle nahlášených
-          hostů budeme objednávat i počet jídel a velikost dortu, či snídaně pro druhý den. Děkujeme, Aleš a Lenka</p>
-
-        <form netlify>
-          <div class="form-group">
-            <label for="Vaše jméno">Vaše jméno</label>
-            <input type="text" class="form-control" id="jmeno" name="jmeno" placeholder="Vaše jméno">
-          </div>
-          <div class="form-group">
-            <label for="exampleInputEmail1">Váš email</label>
-            <input type="email" class="form-control" id="email" name="email" aria-describedby="emailHelp" placeholder="Váš email">
-          </div>
-          <div class="form-group">
-            <label for="Pocet-dospelych-hostu">Počet dospělých hostů</label>
-            <input type="number" class="form-control" id="pocet-dospelych-hostu" name="pocet-dospelych-hostu" min="1" placeholder="Počet dospělých hostů">
-          </div>
-          <div class="form-group">
-            <label for="Pocet-deti">Počet dětí</label>
-            <input type="number" class="form-control" id="pocet-deti" name="pocet-deti" max="4" min="0" placeholder="Počet dětí">
-          </div>
-          <div class="form-group">
-            <label for="mate-zajem-o-ubytovani">Máte zájem o ubytování?</label>
-            <div class="form-check">
-              <input class="form-check-input" type="radio" name="Ubytování" id="inlineRadio1" value="ano">
-              <label class="form-check-label" for="inlineRadio1">ANO</label>
+          <form netlify>
+            <div class="form-group">
+              <label for="Vaše jméno">Vaše jméno</label>
+              <input type="text" class="form-control" id="jmeno" name="jmeno" placeholder="Vaše jméno">
             </div>
-            <div class="form-check">
-              <input class="form-check-input" type="radio" name="Ubytování" id="inlineRadio2" value="ne">
-              <label class="form-check-label" for="inlineRadio2">NE</label>
+            <div class="form-group">
+              <label for="exampleInputEmail1">Váš email</label>
+              <input type="email" class="form-control" id="email" name="email" aria-describedby="emailHelp" placeholder="Váš email">
             </div>
-          </div>
-          <div class="form-group">
-            <label for="exampleFormControlTextarea1">Poznámka</label>
-            <textarea class="form-control" id="exampleFormControlTextarea1" name="exampleFormControlTextarea1" rows="3"></textarea>
-          </div>
+            <div class="form-group">
+              <label for="Pocet-dospelych-hostu">Počet dospělých hostů</label>
+              <input type="number" class="form-control" id="pocet-dospelych-hostu" name="pocet-dospelych-hostu" min="1" placeholder="Počet dospělých hostů">
+            </div>
+            <div class="form-group">
+              <label for="Pocet-deti">Počet dětí</label>
+              <input type="number" class="form-control" id="pocet-deti" name="pocet-deti" max="4" min="0" placeholder="Počet dětí">
+            </div>
+            <div class="form-group">
+              <label for="mate-zajem-o-ubytovani">Máte zájem o ubytování?</label>
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="Ubytování" id="inlineRadio1" value="ano">
+                <label class="form-check-label" for="inlineRadio1">ANO</label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="Ubytování" id="inlineRadio2" value="ne">
+                <label class="form-check-label" for="inlineRadio2">NE</label>
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="exampleFormControlTextarea1">Poznámka</label>
+              <textarea class="form-control" id="exampleFormControlTextarea1" name="exampleFormControlTextarea1" rows="3"></textarea>
+            </div>
 
-          <button type="submit" class="btn btn-primary">Odeslat</button>
-        </form>
+            <button type="submit" class="btn btn-primary">Odeslat</button>
+          </form>
+
+          <footer class="bd-footer text-muted">
+            <div class="container-fluid p-3 p-md-5">
+              <ul class="bd-footer-links"></ul>
+            </div>
+          </footer>
 
 
 
-
-        <!-- .container  -->
+          <!-- .container  -->
+        </div>
       </div>
       <!-- posledni na strance maji byt scripty -->
 
