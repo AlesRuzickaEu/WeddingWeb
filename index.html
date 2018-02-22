@@ -1,5 +1,5 @@
 <!DOCTYPE HTML>
-<html lang="cz">
+<html lang="cs">
 
 <head>
   <meta charset="utf-8">
@@ -7,7 +7,8 @@
   <title>Svatební web</title>
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
     crossorigin="anonymous">
-    <link href="https://fonts.googleapis.com/css?family=Allura|Amatic+SC|Courgette|Grand+Hotel|Great+Vibes|Italianno|Kalam|Marck+Script|Petit+Formal+Script|Romanesco|Shadows+Into+Light+Two" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Allura|Amatic+SC|Courgette|Grand+Hotel|Great+Vibes|Italianno|Kalam|Marck+Script|Petit+Formal+Script|Romanesco|Shadows+Into+Light+Two"
+    rel="stylesheet">
   <link rel="stylesheet" href="style.css">
 </head>
 
@@ -45,13 +46,15 @@
         <div class="col">
           <p class="text-center">
             <img src="photos/heart-small.png" alt=""> </p>
-          <h1 class="text-center">Lenka Hrabáková a Aleš Růžička</h1>
+          <h1 class="text-center">Lenka Hrabáková
+            <br> &amp;
+            <br> Aleš Růžička</h1>
         </div>
       </div>
 
 
       <!--carousel na obrázek společný -->
-      <div id="uvod" class="row">
+      <div id="uvod" class="row mt-5">
         <div class="carousel">
           <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
             <ol class="carousel-indicators">
@@ -112,8 +115,10 @@
 
           <div class="jumbotron jumbotron-fluid">
             <div class="container">
-              <div class="display-4 text-center" id="demo"></div>
-              <p class="lead text-center">Se budou brát 2.6.2018 U Mauritzů ve Stožci</p>
+              <p class="lead text-center">Se budou brát za </p>
+              <p class="display-4 text-center" id="demo"></p>
+              <p class="lead text-center">U Mauritzů ve Stožci. </p>
+
             </div>
           </div>
         </div>
@@ -137,7 +142,7 @@ cestovni tipy ???udelat media query? -->
           <div class="row mt-3">
             <div class="col col-5">
               <div class="media">
-                <img class="align-self-center mr-3 car" src="car.png" alt="">
+                <img class="align-self-center mr-3 car" src="photos/car.png" alt="">
                 <div class="media-body">
                   <h5 class="mt-0">Autem</h5>
                   Příjezd autem je bezesporu nejjednodušším řešením. Nejsme si však jisti, že se na parkoviště u penzionu vejdou všechna auta.
@@ -150,7 +155,7 @@ cestovni tipy ???udelat media query? -->
 
             <div class="col offset-1 col-5">
               <div class="media">
-                <img class="align-self-center mr-3 car" src="train.png" alt="">
+                <img class="align-self-center mr-3 car" src="photos/train.png" alt="">
                 <div class="media-body">
                   <h5 class="mt-0">Vlakem</h5>
                   Další variantou, jak se dostat do Stožce je
@@ -166,20 +171,77 @@ cestovni tipy ???udelat media query? -->
 
 
       <!-- Program dne  -->
+      <div class="row mt-5 program">
+        <div class="col">
+          <h2>Program svatebního dne</h2>
       <div class="row mt-5">
         <div class="col">
-          <h2>Program dne</h2>
-          <ul>
-            <li>10:00-12:30 drobné občerstvení a přivítání hostů</li>
-            <li>13:00 obřad u dřevěného kříže</li>
-            <li>14:00-15:00 focení</li>
-            <li>15:00 společný oběd</li>
-            <li>16:00 krájení dortu</li>
-            <li>19:00 grilování a zábava</li>
-          </ul>
+          <div class="media">
+            <img class="align-self-center mr-3 heart" src="photos/heart-small.png" alt="">
+            <div class="media-body">
+              <h5 class="mt-0">
+                <span>8:30 n- 12:00</span> Příjezd hostů</h5>
+            </div>
+          </div>
         </div>
       </div>
-
+      <div class="row mt-3">
+        <div class="col">
+          <div class="media">
+            <img class="align-self-center mr-3 heart" src="photos/heart-small.png" alt="">
+            <div class="media-body">
+              <h5 class="mt-0">
+                <span>13:00</span> Obřad</h5>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row mt-3">
+        <div class="col">
+          <div class="media">
+            <img class="align-self-center mr-3 heart" src="photos/heart-small.png" alt="">
+            <div class="media-body">
+              <h5 class="mt-0">
+                <span>14:00 - 15:00</span> Focení</h5>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row mt-3">
+        <div class="col">
+          <div class="media">
+            <img class="align-self-center mr-3 heart" src="photos/heart-small.png" alt="">
+            <div class="media-body">
+              <h5 class="mt-0">
+                <span>15:00</span> Společný oběd</h5>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row mt-3">
+        <div class="col">
+          <div class="media">
+            <img class="align-self-center mr-3 heart" src="photos/heart-small.png" alt="">
+            <div class="media-body">
+              <h5 class="mt-0">
+                <span>16:00</span> Krájení svatebního dortu</h5>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row mt-3">
+        <div class="col">
+          <div class="media">
+            <img class="align-self-center mr-3 heart" src="photos/heart-small.png" alt="">
+            <div class="media-body">
+              <h5 class="mt-0">
+                <span>19:00</span> Grilování a společná zábava</h5>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
       <!-- oblečení -->
 
       <div class="row mt-5">
@@ -195,95 +257,96 @@ cestovni tipy ???udelat media query? -->
           </p>
           <p>
             <div class="pinterest">
-                <a data-pin-do="embedBoard" data-pin-lang="cs" data-pin-board-width="1100" data-pin-scale-height="400" data-pin-scale-width="80"
-                  href="https://cz.pinterest.com/lenkahrabkov/oble%25C4%258Den%25C3%25AD-na-svatbu/"></a>
+              <a data-pin-do="embedBoard" data-pin-lang="cs" data-pin-board-width="1100" data-pin-scale-height="400" data-pin-scale-width="80"
+                href="https://cz.pinterest.com/lenkahrabkov/oble%25C4%258Den%25C3%25AD-na-svatbu/"></a>
           </p>
           </div>
-      </div>
-
-
-      <!-- dárky -->
-      <div class="row mt-5">
-        <div class="col">
-          <h2>Svatební dary </h2>
-          <p>Uvítáme jakýkoliv příspěvek na svatbu, či vybavení domečku. Pokud nám přeci jen chcete dát hmotný dárek, nebo zážitek,
-            seznam naleznete na odkazu: </p>
-          <p>
-            <a href="https://www.tomikup.cz/list/share/54950">Seznam svatebních dárků</a>
-          </p>
-
         </div>
-      </div>
-
-      <!-- RPSV -->
-
-      <div class="row mt-5">
-        <div class="col">
-          <h2>RPSV</h2>
-          <p>Prosím, odpovězte nám na pozvání, co nejdříve (nejlépe do 2.4.). V penzionu je možnost i ubytování (bude celý jen
-            pro nás), ale počet lůžek je omezený a přeci jen, během červnových víkendů je Šumava už oblíbeným útočištěm turistů.
-            Při včasné odpovědi vám po naplnění kapacity rádi zarezervujeme i jiný penzion a zajistíme dopravu. Podle nahlášených
-            hostů budeme objednávat i počet jídel a velikost dortu, či snídaně pro druhý den. Děkujeme, Aleš a Lenka</p>
-
-          <form netlify>
-            <div class="form-group">
-              <label for="Vaše jméno">Vaše jméno</label>
-              <input type="text" class="form-control" id="jmeno" name="jmeno" placeholder="Vaše jméno">
-            </div>
-            <div class="form-group">
-              <label for="exampleInputEmail1">Váš email</label>
-              <input type="email" class="form-control" id="email" name="email" aria-describedby="emailHelp" placeholder="Váš email">
-            </div>
-            <div class="form-group">
-              <label for="Pocet-dospelych-hostu">Počet dospělých hostů</label>
-              <input type="number" class="form-control" id="pocet-dospelych-hostu" name="pocet-dospelych-hostu" min="1" placeholder="Počet dospělých hostů">
-            </div>
-            <div class="form-group">
-              <label for="Pocet-deti">Počet dětí</label>
-              <input type="number" class="form-control" id="pocet-deti" name="pocet-deti" max="4" min="0" placeholder="Počet dětí">
-            </div>
-            <div class="form-group">
-              <label for="mate-zajem-o-ubytovani">Máte zájem o ubytování?</label>
-              <div class="form-check">
-                <input class="form-check-input" type="radio" name="Ubytování" id="inlineRadio1" value="ano">
-                <label class="form-check-label" for="inlineRadio1">ANO</label>
-              </div>
-              <div class="form-check">
-                <input class="form-check-input" type="radio" name="Ubytování" id="inlineRadio2" value="ne">
-                <label class="form-check-label" for="inlineRadio2">NE</label>
-              </div>
-            </div>
-            <div class="form-group">
-              <label for="exampleFormControlTextarea1">Poznámka</label>
-              <textarea class="form-control" id="exampleFormControlTextarea1" name="exampleFormControlTextarea1" rows="3"></textarea>
-            </div>
-
-            <button type="submit" class="btn btn-primary">Odeslat</button>
-          </form>
-
-          <footer class="bd-footer text-muted">
-            <div class="container-fluid p-3 p-md-5">
-              <ul class="bd-footer-links"></ul>
-            </div>
-          </footer>
 
 
+        <!-- dárky -->
+        <div class="row mt-5">
+          <div class="col">
+            <h2>Svatební dary </h2>
+            <p>Uvítáme jakýkoliv příspěvek na svatbu, či vybavení domečku. Pokud nám přeci jen chcete dát hmotný dárek, nebo
+              zážitek, seznam naleznete na odkazu: </p>
+            <p>
+              <a href="https://www.tomikup.cz/list/share/54950">Seznam svatebních dárků</a>
+            </p>
 
-          <!-- .container  -->
+          </div>
         </div>
-      </div>
-      <!-- posledni na strance maji byt scripty -->
 
-      <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
-        crossorigin="anonymous"></script>
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
-        crossorigin="anonymous"></script>
-      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
-        crossorigin="anonymous"></script>
-      <script src="script.js"></script>
-      <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB3sNIwgziURt_aRyfJEtCsoOhT7g3PmkQ
+        <!-- RPSV -->
+
+        <div class="row mt-5">
+          <div class="col">
+            <h2>RPSV</h2>
+            <p>Prosím, odpovězte nám na pozvání, co nejdříve (nejlépe do 2.4.). V penzionu je možnost i ubytování (bude celý
+              jen pro nás), ale počet lůžek je omezený a přeci jen, během červnových víkendů je Šumava už oblíbeným útočištěm
+              turistů. Při včasné odpovědi vám po naplnění kapacity rádi zarezervujeme i jiný penzion a zajistíme dopravu.
+              Podle nahlášených hostů budeme objednávat i počet jídel a velikost dortu, či snídaně pro druhý den. Děkujeme,
+              Aleš a Lenka</p>
+
+            <form name="contact-new" netlify>
+              <div class="form-group">
+                <label for="jmeno">Vaše jméno</label>
+                <input type="text" class="form-control" id="jmeno" name="jmeno" placeholder="Vaše jméno">
+              </div>
+              <div class="form-group">
+                <label for="email">Váš email</label>
+                <input type="email" class="form-control" id="email" name="email" aria-describedby="emailHelp" placeholder="Váš email">
+              </div>
+              <div class="form-group">
+                <label for="pocet-dospelych-hostu">Počet dospělých hostů</label>
+                <input type="number" class="form-control" id="pocet-dospelych-hostu" name="pocet-dospelych-hostu" min="1" placeholder="Počet dospělých hostů">
+              </div>
+              <div class="form-group">
+                <label for="pocet-deti">Počet dětí</label>
+                <input type="number" class="form-control" id="pocet-deti" name="pocet-deti" max="4" min="0" placeholder="Počet dětí">
+              </div>
+              <div class="form-group">
+                <label for="mate-zajem-o-ubytovani">Máte zájem o ubytování?</label>
+                <div class="form-check">
+                  <input class="form-check-input" type="radio" name="mate-zajem-o-ubytovani" id="mate-zajem-o-ubytovani-ano" value="ano">
+                  <label class="form-check-label" for="mate-zajem-o-ubytovani-ne">ANO</label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="radio" name="mate-zajem-o-ubytovani" id="mate-zajem-o-ubytovani-ne" value="ne">
+                  <label class="form-check-label" for="mate-zajem-o-ubytovani-ani">NE</label>
+                </div>
+              </div>
+              <div class="form-group">
+                <label for="note">Poznámka</label>
+                <textarea class="form-control" id="note" name="note" rows="3"></textarea>
+              </div>
+
+              <button type="submit" class="btn btn-primary">Odeslat</button>
+            </form>
+
+            <footer class="bd-footer text-muted">
+              <div class="container-fluid p-3 p-md-5">
+                <ul class="bd-footer-links"></ul>
+              </div>
+            </footer>
+
+
+
+            <!-- .container  -->
+          </div>
+        </div>
+        <!-- posledni na strance maji byt scripty -->
+
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+          crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+          crossorigin="anonymous"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+          crossorigin="anonymous"></script>
+        <script src="script.js"></script>
+        <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB3sNIwgziURt_aRyfJEtCsoOhT7g3PmkQ
 &callback=myMap"></script>
-      <script async defer src="//assets.pinterest.com/js/pinit.js"></script>
+        <script async defer src="//assets.pinterest.com/js/pinit.js"></script>
 
 </body>
 

@@ -1,6 +1,6 @@
 .fotka {
     width:200px;
-  }
+ }
  h2 {
      color:#000080;
  }
@@ -11,10 +11,10 @@
      background-repeat: no-repeat;
      background-position: center;
      background-attachment: fixed;
-
  }
+
  .page {
-     background-color: rgba(255, 255, 255, 0.8);
+     background-color: rgba(255, 255, 255, 0.9);
  }
 
  .carousel img {
@@ -24,25 +24,42 @@
  .zenich-a-nevesta img {
      width:100%;
  }
+ .card-title {
+    font-family: 'Amatic SC', cursive;
+    font-size: 40px;
+    text-align: center;
+ }
 
  .odpocitavani .jumbotron .lead {
      font-size: 2rem;
  }
+
  .car {
      width: 64px;
      height: 64px;
  }
+
  .train {
     width: 64px;
     height: 64px;
  }
 
+ .heart {
+     width: 25px;
+     height: 25px;
+ }
+.program span{
+    
+    display: inline-block;
+    width: 8em;
+}
  #nadpis img {
      width: 200px;
     
  }
  #nadpis h1 {
     font-family: 'Amatic SC', cursive;
+    font-size: 85px;
  }
 
  /* .carousel {
@@ -53,3 +70,4 @@
  .pinterest > span {
      width: 100% !important;
  }
+ 
