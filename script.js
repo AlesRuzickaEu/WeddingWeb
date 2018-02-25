@@ -44,15 +44,4 @@ var marker = new google.maps.Marker({
     });
 }
 
-// // carousel
-
-// $('.carousel').carousel({
-// cycle:
-//   interval: 200
-// })
 $('.carousel').carousel();
-
-
-
-// src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB3sNIwgziURt_aRyfJEtCsoOhT7g3PmkQ
-// &callback=myMap"
