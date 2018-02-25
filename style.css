@@ -71,3 +71,21 @@
      width: 100% !important;
  }
  
+
+ .program-item {
+     background-image: url('photos/heart-small.png');
+     background-position: 5px 5px;
+     background-repeat: no-repeat;
+     background-size: 25px 25px;
+     padding-left: 50px;
+     font-size: 1.25rem;
+     display: flex;
+ }
+
+ .program-item-time {
+     flex: 0 0 7rem;
+ }
+
+ .program-item-text {
+    flex: 1;
+}
