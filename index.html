@@ -4,17 +4,18 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <title>Svatební web</title>
+  <title>Svatební web Lenky a Aleše</title>
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
     crossorigin="anonymous">
-  <link href="https://fonts.googleapis.com/css?family=Amatic+SC"
-    rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Amatic+SC" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
+  <link rel="icon" href="photos/heart-small.png" type="image/png" />
+
 </head>
 
 
 <body>
-  
+
   <div class="page">
     <div class="container">
 
@@ -24,7 +25,11 @@
             <img src="photos/heart-small.png" alt=""> </p>
           <h1 class="text-center">Lenka Hrabáková
             <br> &amp;
-            <br> Aleš Růžička</h1>
+            <br> Aleš Růžička
+            <br>
+            <br> 2. 6. 2018 13:00
+            <br> U Mauritzů ve Stožci</h1>
+
         </div>
       </div>
 
@@ -83,7 +88,26 @@
 
       </div>
 
-
+      <!-- Aktuality -->
+      <div class="row mt-5">
+        <div class="col">
+          <h2>Aktuality</h2>
+          <ul>
+            <li> Pro všechni, kteří měli zájem o ubytování, je zařízené, a paní majitelka Vás v sobotu po příjezdu ubytuje.</li>
+            <li> Prosíme Vás o naplánování příjezdu mezi 10:00 - 12:00. Bude pro Vás připravené občerstvení.</li>
+            <li> Věci nad rámec našeho pohoštění (tedy tvrdý alkohol, atp.) lze zaplatit kartou. </li>
+            <li> Na místě bude zajištěno hlídání - dětský koutek, abyste si třeba mohli na chvilku oddychnout, v poklidu se najíst,
+              zatančit si,...</li>
+          </ul>
+        </div>
+      </div>
+      <div class="row mt-5">
+        <div class="col">
+          <p>
+            <h2>Těšíme se na Vás!</h2>
+          </p>
+        </div>
+      </div>
 
       <!-- část s odpočítáváním -->
       <div id="kdy-a-kde" class="row odpocitavani mt-5">
@@ -152,8 +176,12 @@ cestovni tipy ???udelat media query? -->
           <h2>Program svatebního dne</h2>
 
           <div class="program-item mt-5">
-            <div class="program-item-time">od 8:30</div>
+            <div class="program-item-time">od 10:00</div>
             <div class="program-item-text">Příjezd hostů a drobné občerstvení</div>
+          </div>
+          <div class="program-item mt-5">
+            <div class="program-item-time">12:30</div>
+            <div class="program-item-text">Přesun k obřadnímu místu</div>
           </div>
           <div class="program-item mt-5">
             <div class="program-item-time">13:00</div>
@@ -192,8 +220,8 @@ cestovni tipy ???udelat media query? -->
             na pár fotek.
           </p>
           <p class="pinterest">
-              <a data-pin-do="embedBoard" data-pin-lang="cs" data-pin-board-width="1100" data-pin-scale-height="400" data-pin-scale-width="80"
-                href="https://cz.pinterest.com/lenkahrabkov/oble%25C4%258Den%25C3%25AD-na-svatbu/"></a>
+            <a data-pin-do="embedBoard" data-pin-lang="cs" data-pin-board-width="1100" data-pin-scale-height="400" data-pin-scale-width="80"
+              href="https://cz.pinterest.com/lenkahrabkov/oble%25C4%258Den%25C3%25AD-na-svatbu/"></a>
           </p>
         </div>
       </div>
@@ -202,19 +230,156 @@ cestovni tipy ???udelat media query? -->
       <!-- dárky -->
       <div class="row mt-5">
         <div class="col">
-          <h2>Svatební dary </h2>
+          <h2>Svatební dary</h2>
           <p>Uvítáme jakýkoliv příspěvek na svatbu, či vybavení domečku. Pokud nám přeci jen chcete dát hmotný dárek, nebo zážitek,
-            seznam naleznete na odkazu: </p>
-          <p>
-            <a href="https://www.tomikup.cz/list/public/204fdb93-508a-47c0-a290-9c879567fe0f">Seznam svatebních dárků</a>
+            seznam naleznete na odkazu:</p>
+          <form>
+            <table class="table table-hover">
 
+              <tr>
+                <th scope="row">
+                  <a href="http://www.zikmundov.cz/">Odpočinkový víkend v Zikmundově</a>
+                </th>
+                <td>
+                  <input class="btn btn-primary" type="submit" value="Zarezervovat" name="Zikmundov">
+                </td>
+              </tr>
+              <tr>
+                <th>
+                  <a href="http://farmanoe.cz/">Víkend na farmě Noe</a>
+                </th>
+                <td>
+                  <input class="btn btn-primary" type="submit" value="Zarezervovat" name="FarmaNoe">
+                </td>
+              </tr>
+              <tr>
+                <th>
+                  <a href="http://www.adamuvdvur.cz">Víkend v předšumaví</a>
+                </th>
+                <td>
+                  <input class="btn btn-primary" type="submit" value="Zarezervovat" name="Adamuvdvur">
+                </td>
+              </tr>
+              <tr>
+                <th>Příspěvek na svatební cestu</th>
+                <td>
+                  <input class="btn btn-primary" type="submit" value="Zarezervovat" name="SvatebniCesta">
+                </td>
+              </tr>
+              <tr>
+                <th>Příspěvek na vybavení domu</th>
+                <td>
+                  <input class="btn btn-primary" type="submit" value="Zarezervovat" name="VybaveniDomu">
+                </td>
 
+              </tr>
+              <tr>
+                <th>
+                  <a href="https://nejbarevnejsikucharka.cz/Nejbarevnější kuchařka">Nejbarevnější kuchařka</a>
+                </th>
+                <td>
+                  <input class="btn btn-secondary" type="submit" value="Rezervováno" name="NejbarevnejsiKucharka" disabled>
+                </td>
+
+              </tr>
+              <tr>
+                <th>
+                  <a href="http://eshop.mycookingdiary.cz">Kuchařka My Cooking Diary</a>
+                </th>
+                <td>
+                  <input class="btn btn-secondary" type="submit" value="Rezervováno" name="MyCookingDiary" disabled>
+                </td>
+              </tr>
+              <tr>
+                <th>Sada 3 skleněných nebo nerezových mís</th>
+                <td>
+                  <input class="btn btn-secondary" type="submit" value="Rezervováno" name="Misy" disabled>
+                </td>
+              </tr>
+              <tr>
+                <th>
+                  <a href=https://www.mall.cz/hrnce-tescoma/tescoma-hrnec-ultima-s-poklici-18-cm-30-l>Hrnec 3l</a>
+                </th>
+                <td>
+                  <input class="btn btn-secondary" type="submit" value="Rezervováno" name="Hrnec" disabled>
+                </td>
+              </tr>
+              <tr>
+                <th>
+                  <a href="https://kuchynske-mlynky.heureka.cz/jihokov-mlynek-na-mak-se-sroubem-mks-215/#section">Mlýnek na mák</a>
+                </th>
+                <td>
+                  <input class="btn btn-secondary" type="submit" value="Rezervováno" name="MlynekMak" disabled>
+                </td>
+              </tr>
+              <tr>
+                <th>
+                  <a href="http://www.banthaimassage.cz/">Thajské masáže</a>
+                </th>
+                <td>
+                  <input class="btn btn-primary" type="submit" value="Zarezervovat" name="Masaze">
+                </td>
+              </tr>
+              <tr>
+                <th>
+                  <a href="https://www.alza.cz/rohnson-r-291-d1939758.htm?IDP=2552#popis">Sušička na ovoce</a>
+                </th>
+                <td>
+                  <input class="btn btn-primary" type="submit" value="Zarezervovat" name="Sušička">
+                </td>
+              </tr>
+              <tr>
+                <th>
+                  <a href="https://www.alza.cz/hama-gelova-podlozka-pod-mys-cerna-d256821.htm">Podložka pod myš</a>
+                </th>
+                <td>
+                  <input class="btn btn-primary" type="submit" value="Zarezervovat" name="PodlozkaMys">
+                </td>
+              </tr>
+              <tr>
+                <th>
+                  <a href="https://www.kosmas.cz/knihy/235509/kure-jednoduse-dokonale/">Kuchařka Kuře jednoduše & dokonale</a>
+                </th>
+                <td>
+                  <input class="btn btn-primary" type="submit" value="Zarezervovat" name="KucharkaKure">
+                </td>
+              </tr>
+              <tr>
+                <th>
+                  <a href="https://www.kosmas.cz/knihy/240137/zelenina-a-lusteniny-jednoduse-dokonale/">Kuchařka Lustěniny jednoduše & dokonale</a>
+                </th>
+                <td>
+                  <input class="btn btn-primary" type="submit" value="Zarezervovat" name="KucharkaKure">
+                </td>
+              </tr>
+              <tr>
+                <th>
+                  <a href="https://www.bushcraftshop.cz/bushcraftshop/eshop/14-1-RUCNI-PILY/0/5/2354-Pilka-Silky-Pocketboy-170-10-black">Skládací ruční pilka</a>
+                </th>
+                <td>
+                  <input class="btn btn-primary" type="submit" value="Zarezervovat" name="RucniPilka">
+                </td>
+              </tr>
+              <tr>
+                <th>
+                  <a href="https://permaseminka.cz/">Semínka na zahradu</a>
+                </th>
+                <td>
+                  <input class="btn btn-primary" type="submit" value="Zarezervovat" name="Seminka">
+                </td>
+              </tr>
+            </table>
+
+          </form>
         </div>
       </div>
 
+
+
+
       <!-- RPSV -->
 
-      <div class="row mt-5">
+      <!-- <div class="row mt-5">
         <div class="col">
           <h2>RPSV</h2>
           <p>Prosím, odpovězte nám na pozvání, co nejdříve (nejlépe do 2.4.). V penzionu je možnost i ubytování (bude celý jen
@@ -256,20 +421,20 @@ cestovni tipy ???udelat media query? -->
             </div>
 
             <button type="submit" class="btn btn-primary">Odeslat</button>
-          </form>
+          </form> -->
 
-          <footer class="bd-footer text-muted">
-            <div class="container-fluid p-3 p-md-5">
-              <ul class="bd-footer-links"></ul>
-            </div>
-          </footer>
-
-
-
-          <!-- .container  -->
+      <footer class="bd-footer text-muted">
+        <div class="container-fluid p-3 p-md-5">
+          <ul class="bd-footer-links"></ul>
         </div>
-      </div>
+      </footer>
+
+
+
+      <!-- .container  -->
     </div>
+  </div>
+  </div>
   </div>
   <!-- posledni na strance maji byt scripty -->
 
